@@ -76,8 +76,6 @@ body {
 }
 
 .teaser {
-    min-height: 500px;
-    height: 720px;
     margin-bottom: 36px;
 }
 
@@ -113,4 +111,24 @@ footer {
     border: 1px solid var(--hover-color);
     border-radius: 4px;
     margin-left: 12px;
+}
+
+@media (min-width: 740px) {
+    .teaser {
+        height: 480px;
+    }
+}
+
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .teaser {
+        height: 520px;
+    }
+}
+
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+    .teaser {
+        height: 680px;
+    }
 }
