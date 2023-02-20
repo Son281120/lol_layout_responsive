@@ -37,7 +37,7 @@ body {
 
 .header__navbar-list {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
     list-style: none;
@@ -54,9 +54,7 @@ body {
     color: var(--hover-color);
 }
 
-.champions {
-    margin-bottom: 24px;
-}
+
 
 .champion__img {
     padding-top: 113%;
@@ -75,9 +73,6 @@ body {
     padding: 18px 0;
 }
 
-.teaser {
-    margin-bottom: 36px;
-}
 
 footer {
     display: flex;
@@ -100,6 +95,7 @@ footer {
     border: 1px solid var(--hover-color);
     border-radius: 4px;
     padding: 12px;
+    margin-right: 12px;
 }
 
 .footer__contact-btn {
@@ -110,25 +106,45 @@ footer {
     padding: 12px;
     border: 1px solid var(--hover-color);
     border-radius: 4px;
-    margin-left: 12px;
+    
 }
 
-@media (min-width: 740px) {
-    .teaser {
-        height: 480px;
+@media (max-width: 739px) {
+    
+    .champions {
+        margin-bottom: 8px;
     }
+
+    .teaser {
+        height: 400px;
+        margin-bottom: 16px;
+    }  
 }
 
 
 @media (min-width: 740px) and (max-width: 1023px) {
+    
+    .champions {
+        margin-bottom: 16px;
+    }
+
     .teaser {
         height: 520px;
+        margin-bottom: 24px;
     }
+
 }
 
 
-@media (min-width: 1024px) and (max-width: 1239px) {
+@media (min-width: 1024px) {
+    
+    
+    .champions {
+        margin-bottom: 24px;
+    }
+    
     .teaser {
-        height: 680px;
+        height: 720px;
+        margin-bottom: 36px;
     }
 }
