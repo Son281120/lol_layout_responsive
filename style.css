@@ -61,7 +61,7 @@ body {
     height: 0;
     background-repeat: no-repeat; 
     background-size: contain; 
-    background-position: center;
+    background-position: bottom center;
 }
 
 .champion__name {
